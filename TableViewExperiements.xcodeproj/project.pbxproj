@@ -15,6 +15,7 @@
 		459F45DD1F044738009E1BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459F45DB1F044738009E1BC2 /* LaunchScreen.storyboard */; };
 		459F45E81F044738009E1BC2 /* TableViewExperiementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F45E71F044738009E1BC2 /* TableViewExperiementsTests.swift */; };
 		459F45F31F044738009E1BC2 /* TableViewExperiementsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F45F21F044738009E1BC2 /* TableViewExperiementsUITests.swift */; };
+		459F46011F04482B009E1BC2 /* TableViewControllerFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459F46001F04482B009E1BC2 /* TableViewControllerFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		459F45EE1F044738009E1BC2 /* TableViewExperiementsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewExperiementsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		459F45F21F044738009E1BC2 /* TableViewExperiementsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExperiementsUITests.swift; sourceTree = "<group>"; };
 		459F45F41F044738009E1BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		459F46001F04482B009E1BC2 /* TableViewControllerFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				459F45CF1F044738009E1BC2 /* AppDelegate.swift */,
 				459F45D11F044738009E1BC2 /* ViewController.swift */,
 				459F45D31F044738009E1BC2 /* Main.storyboard */,
+				459F46001F04482B009E1BC2 /* TableViewControllerFile.swift */,
 				459F45D91F044738009E1BC2 /* Assets.xcassets */,
 				459F45DB1F044738009E1BC2 /* LaunchScreen.storyboard */,
 				459F45DE1F044738009E1BC2 /* Info.plist */,
@@ -268,6 +271,7 @@
 				459F45D21F044738009E1BC2 /* ViewController.swift in Sources */,
 				459F45D81F044738009E1BC2 /* TableViewExperiements.xcdatamodeld in Sources */,
 				459F45D01F044738009E1BC2 /* AppDelegate.swift in Sources */,
+				459F46011F04482B009E1BC2 /* TableViewControllerFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
