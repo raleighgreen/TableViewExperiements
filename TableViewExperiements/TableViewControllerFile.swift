@@ -10,12 +10,13 @@ import Foundation
 import UIKit
 
 var names = [String]()
-
+var identities = [String]()
 
 class TableViewController:  UITableViewController {
     
     override func viewDidLoad() {
         names = ["Maj7","Min7","Dom7","Min(maj)7"]
+        identities = ["A","B","C","D"]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,7 +29,11 @@ class TableViewController:  UITableViewController {
         return cell!
     }
     
-    //override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vcName = identities[indexPath.row]
         
-    //}
+        let viewController = storyboard?.instantiateViewController(withIdentifier: vcName)
+        self.navigationController?.pushViewController(viewController!, animated: true)
+    }
+    
 }
