@@ -13,10 +13,12 @@
         <scene sceneID="qYp-eC-JaC">
             <objects>
                 <tableViewController id="D8S-JG-sLV" customClass="TableViewController" customModule="TableViewExperiements" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nvw-wm-yEm">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nvw-wm-yEm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.45882353190000003" green="0.4431372583" blue="0.97254902119999997" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="7PV-ta-Tk8">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -24,6 +26,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7PV-ta-Tk8" id="7nm-e8-KDc">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -65,7 +68,19 @@
                     <view key="view" contentMode="scaleToFill" id="A7a-Rk-bUt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBe-RO-Tsv">
+                                <rect key="frame" x="159" y="60" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.38223999739999998" green="0.68571519849999996" blue="0.93517154459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TBe-RO-Tsv" firstAttribute="top" secondItem="lL3-3D-ILg" secondAttribute="bottom" constant="40" id="5YR-Bp-CtQ"/>
+                            <constraint firstItem="TBe-RO-Tsv" firstAttribute="centerX" secondItem="A7a-Rk-bUt" secondAttribute="centerX" id="H5z-dj-94H"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwg-hn-z7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,7 +98,19 @@
                     <view key="view" contentMode="scaleToFill" id="USI-xa-Iqz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dominant 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDl-vk-6pT">
+                                <rect key="frame" x="143.5" y="60" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72015672449123302" green="0.51363701818166896" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QDl-vk-6pT" firstAttribute="top" secondItem="E1b-eE-WYe" secondAttribute="bottom" constant="40" id="FiD-UW-fKI"/>
+                            <constraint firstItem="QDl-vk-6pT" firstAttribute="centerX" secondItem="USI-xa-Iqz" secondAttribute="centerX" id="Oo4-WO-y1v"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZD-CC-73o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,12 +128,54 @@
                     <view key="view" contentMode="scaleToFill" id="Tpq-4w-bh4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor(maj7)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YU8-Hd-X1a">
+                                <rect key="frame" x="141.5" y="60" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59877025484193236" green="0.8286362886428833" blue="0.72483825904577515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YU8-Hd-X1a" firstAttribute="centerX" secondItem="Tpq-4w-bh4" secondAttribute="centerX" id="842-Dn-XYC"/>
+                            <constraint firstItem="YU8-Hd-X1a" firstAttribute="top" secondItem="P6o-jw-8cI" secondAttribute="bottom" constant="40" id="gMi-nt-4Uk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucs-Fj-JgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1351" y="-541"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rqk-P0-jNO">
+            <objects>
+                <viewController storyboardIdentifier="E" id="GHf-1x-oYP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="viY-kI-rwP"/>
+                        <viewControllerLayoutGuide type="bottom" id="F2Z-a9-IYe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="td0-un-UtM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dominant7sus4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMc-91-aWh">
+                                <rect key="frame" x="127.5" y="60" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41891116919825783" green="0.056212263898050022" blue="0.93517154459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hMc-91-aWh" firstAttribute="top" secondItem="viY-kI-rwP" secondAttribute="bottom" constant="40" id="AFw-7t-bXS"/>
+                            <constraint firstItem="hMc-91-aWh" firstAttribute="centerX" secondItem="td0-un-UtM" secondAttribute="centerX" id="DiZ-Xd-eBc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsb-dj-N9I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991" y="-541"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pFW-qw-slG">
@@ -119,7 +188,19 @@
                     <view key="view" contentMode="scaleToFill" id="edl-sf-Imt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-sF-mW6">
+                                <rect key="frame" x="158.5" y="60" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94697898629999999" green="0.33798873419999997" blue="0.1363414228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gjf-sF-mW6" firstAttribute="centerX" secondItem="edl-sf-Imt" secondAttribute="centerX" id="08z-1V-Kkb"/>
+                            <constraint firstItem="gjf-sF-mW6" firstAttribute="top" secondItem="H9f-dw-THg" secondAttribute="bottom" constant="40" id="i3u-Ec-rYU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVv-ik-PHt" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -15,8 +15,8 @@ var identities = [String]()
 class TableViewController:  UITableViewController {
     
     override func viewDidLoad() {
-        names = ["Maj7","Min7","Dom7","Min(maj)7"]
-        identities = ["A","B","C","D"]
+        names = ["Maj7","Dom7","Min7","Min(maj)7","Dom7sus4"]
+        identities = ["A","B","C","D","E"]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
